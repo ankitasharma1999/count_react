@@ -19,21 +19,13 @@ class Counter extends React.Component {
         count: this.state.count - 1
       });
     };
-  
-    reset() {
-      this.setState({
-        count: 0
-      });
-    };
-  
     render() {
       return (
   
      <div>
         <h1>The Count is:</h1>
-        <button className='inc' onClick={(e) => this.increase(e)}>Increasing!</button>
-        <button className='dec' onClick={(e) => this.decrease(e)}>Decreasing!</button>
-        <button className='reset' onClick={(e) => this.reset(e)}>Reset</button>
+        <button className='inc+' onClick={(e) => this.increase(e)}>Increasing!</button><br></br>
+        <button className='dec-' onClick={(e) => this.decrease(e)}>Decreasing!</button>
         <h3>Current Count: {this.state.count}</h3>
     </div>
       );
